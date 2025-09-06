@@ -1,0 +1,26 @@
+
+{
+  "name": "mentor-labs-replit",
+  "private": true,
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "dev": "turbo -F web dev",
+    "build": "turbo -F web build",
+    "start": "turbo -F web start",
+    "check-types": "turbo -F web check-types",
+    "dev:web": "turbo -F web dev",
+    "start:web": "cd apps/web && npm run build && npm run start"
+  },
+  "dependencies": {
+    "@paralleldrive/cuid2": "^2.2.2",
+    "drizzle-orm": "^0.44.5",
+    "pg": "^8.16.3",
+    "postgres": "^3.4.7"
+  },
+  "devDependencies": {
+    "turbo": "^2.5.4"
+  },
+  "packageManager": "npm@10.9.2"
+}
